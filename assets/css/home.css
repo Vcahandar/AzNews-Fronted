@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header .up-nav {
+  background-color: black;
+  padding: 8px 0;
+}
+header .up-nav .container {
+  max-width: 1200px !important;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+header .up-nav .left-nav {
+  color: white;
+  display: flex;
+  gap: 70px;
+}
+header .up-nav .left-nav img {
+  width: 23px;
+}
+header .up-nav .left-nav span {
+  font-size: 12px;
+}
+header .up-nav .right-nav {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+header .up-nav .right-nav i {
+  font-size: 13px;
+}
+header .mid-nav {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+header .mid-nav .container {
+  max-width: 1200px !important;
+  display: flex;
+  align-items: center;
+}
+header .mid-nav .nav-banner {
+  display: flex;
+  justify-content: flex-end;
+}
+header .down-nav {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+header .down-nav .container {
+  max-width: 1200px !important;
+  display: flex;
+}
+header .down-nav ul {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+header .down-nav ul li {
+  list-style: none;
+}
+header .down-nav ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 39px 19px;
+  font-weight: 600;
+  color: #002e5b;
+  font-family: "Roboto", sans-serif;
+  display: block;
+}/*# sourceMappingURL=home.css.map */
