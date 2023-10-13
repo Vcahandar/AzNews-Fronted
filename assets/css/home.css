@@ -52,6 +52,7 @@ header .down-nav {
 header .down-nav .container {
   max-width: 1200px !important;
   display: flex;
+  justify-content: space-between;
 }
 header .down-nav ul {
   display: flex;
@@ -70,4 +71,39 @@ header .down-nav ul li a {
   color: #002e5b;
   font-family: "Roboto", sans-serif;
   display: block;
+}
+header .down-nav .right .box {
+  position: relative;
+  top: 26px;
+}
+header .down-nav .right .input {
+  padding: 10px;
+  width: 60px;
+  height: 40px;
+  background: none;
+  border: 1px solid #222221;
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: rgb(3, 3, 3);
+  outline: none;
+  transition: 0.5s;
+}
+header .down-nav .right .box:hover input {
+  width: 300px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+header .down-nav .right .box i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #0e0e0e;
+  transition: 0.2s;
+}
+header .down-nav .right .box:hover i {
+  opacity: 0;
+  z-index: -1;
 }/*# sourceMappingURL=home.css.map */

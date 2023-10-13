@@ -56,8 +56,7 @@ header {
 
         }
 
-        .logo {
-        }
+        
 
         .nav-banner {
             display: flex;
@@ -73,6 +72,9 @@ header {
         .container {
             max-width: 1200px !important;
             display: flex;
+            justify-content: space-between;
+
+
         }
 
         ul{
@@ -99,78 +101,46 @@ header {
         }
 
 
-        .right{
-
-            .search-box{
-                font-size: $font-size;
-                border: solid $frame-thickness $frame-color;
-                display: inline-block;
-                position: relative;
-                border-radius: $size;
-                input[type="text"] {
-                    font-family: inherit;
-                    font-weight: bold;
-                    width: $size;
-                    height: $size;
-                    padding: $open-padding;
-                    border: none;
-                    box-sizing: border-box;
-                    border-radius: $size;
-                    transition:
-                        width $open-trans-time cubic-bezier(0.68, -0.55, 0.27, 1.55) $close-trans-time;
-                    &:focus {
-                        outline: none;
-                    }
-                    &:focus, &:not(:placeholder-shown) {
-                        width: $open-width;
-                        transition: width $open-trans-time cubic-bezier(0.68, -0.55, 0.27, 1.55);
-                        + button[type="reset"] {
-                            transform: rotate(-45deg) translateY(0);
-                            transition:
-                                transform $close-trans-time ease-out $open-trans-time;
-                        }
-                        + button[type="reset"]:after {
-                            opacity: 1;
-                            transition:
-                                top $close-trans-time ease-out ($open-trans-time + $close-trans-time),
-                                right $close-trans-time ease-out ($open-trans-time + $close-trans-time),
-                                opacity $close-trans-time ease ($open-trans-time + $close-trans-time);
-                        }
-                    }
-                }
-                button[type="reset"] {
-                    background-color: transparent;
-                    width: $handle-height;
-                    height: $handle-height;
-                    border: 0;
-                    padding: 0;
-                    outline: 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    position: absolute;
-                    top: ($size / 2) - ($handle-height / 2);
-                    right: ($size / 2) - ($handle-height / 2);
-                    transform: rotate(-45deg) translateY($size - $frame-thickness);
-                    transition:
-                        transform $close-trans-time ease-out $close-trans-time;
-                    &:before, &:after {
-                        content: "";
-                        background-color: $frame-color;
-                        width: $frame-thickness;
-                        height: $handle-height;
-                        position: absolute;
-                    }
-                    &:after {
-                        transform: rotate(90deg);
-                        opacity: 0;
-                        transition:
-                            transform $close-trans-time ease-out,
-                            opacity $close-trans-time ease-out;
-                    }
-                }
-            }
+       .right{
+        
+        .box{
+            position: relative;
+            top: 26px;
         }
+        
+        .input {
+            padding: 10px;
+            width: 60px;
+            height: 40px;
+            background: none;
+            border: 1px solid #222221;
+            border-radius: 50px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: rgb(3, 3, 3);
+            outline: none;
+            transition: .5s;
+        }
+        .box:hover input{
+            width: 300px;
+            background: #ffffff;
+            border-radius: 10px;
+        }
+        .box i{
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translate(-50%,-50%);
+            font-size: 16px;
+            color: #0e0e0e;
+            transition: .2s;
+        }
+        .box:hover i{
+            opacity: 0;
+            z-index: -1;
+        }
+        
+       }
 
 
 

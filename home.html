@@ -78,10 +78,12 @@
                     </ul>
                 </div>
                 <div class="right">
-                    <form class="search-box" action="">
-                        <input type="text"  placeholder=" ">
-                        <button type="reset"></button>
-                    </form>
+                    <div class="box">
+                        <form name="search">
+                            <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                        </form>
+                        <i class="fas fa-search"></i>
+                    </div>
                 </div>
 
               
