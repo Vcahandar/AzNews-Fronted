@@ -47,7 +47,7 @@ header .mid-nav .nav-banner {
   justify-content: flex-end;
 }
 header .down-nav {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.1);
 }
 header .down-nav .container {
   max-width: 1200px !important;
@@ -65,12 +65,16 @@ header .down-nav ul li {
 }
 header .down-nav ul li a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   padding: 39px 19px;
-  font-weight: 600;
+  font-weight: 400;
   color: #002e5b;
-  font-family: "Roboto", sans-serif;
+  font-family: "Tilt Neon", sans-serif;
   display: block;
+  transition: 0.5s;
+}
+header .down-nav ul li a:hover {
+  color: red;
 }
 header .down-nav .right .box {
   position: relative;
@@ -81,11 +85,11 @@ header .down-nav .right .input {
   width: 60px;
   height: 40px;
   background: none;
-  border: 1px solid #222221;
+  border: 1px solid #002e5b;
   border-radius: 50px;
   box-sizing: border-box;
   font-size: 16px;
-  color: rgb(3, 3, 3);
+  color: #002e5b;
   outline: none;
   transition: 0.5s;
 }
@@ -100,10 +104,25 @@ header .down-nav .right .box i {
   right: 15px;
   transform: translate(-50%, -50%);
   font-size: 16px;
-  color: #0e0e0e;
+  color: #002e5b;
   transition: 0.2s;
 }
 header .down-nav .right .box:hover i {
   opacity: 0;
   z-index: -1;
+}
+@media screen and (max-width: 1200px) {
+  header .up-nav {
+    display: none !important;
+  }
+  header .down-nav {
+    display: none;
+  }
+  header .mid-nav {
+    box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+  }
+  header .mid-nav .nav-banner {
+    display: none;
+  }
 }/*# sourceMappingURL=home.css.map */
